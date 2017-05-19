@@ -12,7 +12,7 @@ public class Client {
 	int port;
 	String file="";
 	Client(int port,String file) {
-		System.out.println("Client的线程号："+Thread.currentThread());
+		System.out.println("Client "+port+" is created,线程号："+Thread.currentThread());
 		this.port = port;
 		this.file=file;
 	}

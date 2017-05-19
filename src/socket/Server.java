@@ -12,7 +12,7 @@ public class Server {
 	int port;
 	Server(int port){
 		this.port=port;
-		System.out.println("Server的线程号："+Thread.currentThread());
+		System.out.println("Server "+port+" is created,线程号："+Thread.currentThread());
 	}
 	public void begin() throws IOException, Throwable {
 		ServerSocket server = new ServerSocket(port);
